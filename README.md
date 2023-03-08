@@ -76,3 +76,40 @@ SSD: 100GB
 
     sudo journalctl -u saod -f
     
+8/ Tạo ví Sao:
+
+    saod keys add wallet
+
+Nếu đã có ví Sao dùng lệnh recover:
+
+    saod keys add wallet --recover
+    
+Lưu thông tin:
+
+    cat $HOME/.saod/config/priv_validator_key.json
+    
+9/ Tạo validator Sao Network: lưu ý đã faucet và synced
+
+    saod tx staking create-validator \
+    --amount=10000000sao \
+    --pubkey=$(saod tendermint show-validator) \
+    --moniker="Node & Validator VietNam" \
+    --identity=1342DBE69C23B662 \
+    --details="https://t.me/NodeValidatorVietNam" \
+    --chain-id=sao-testnet0 \
+    --commission-rate="0.10" \
+    --commission-max-rate="0.20" \
+    --commission-max-change-rate="0.01" \
+    --min-self-delegation="1000000" \
+    --gas="2000000" \
+    --gas-prices="0.0025sao" \
+    --from=wallet
+    -y
+
+Kiểm tra trạng thái sync:
+
+    saod status 2>&1 | jq .SyncInfo.catching_up
+
+Xem số block đã sync hiện tại:
+
+    saod status 2>&1 | jq .SyncInfo.latest_block_height
