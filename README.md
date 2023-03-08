@@ -91,7 +91,7 @@ Lưu thông tin:
 9/ Tạo validator Sao Network: lưu ý đã faucet và synced
 
     saod tx staking create-validator \
-    --amount=10000000sao \
+    --amount=1000000sao \
     --pubkey=$(saod tendermint show-validator) \
     --moniker="Node & Validator VietNam" \
     --identity=1342DBE69C23B662 \
