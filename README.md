@@ -114,7 +114,7 @@ Lưu thông tin:
 9/ Tạo validator Sao Network: lưu ý đã faucet và synced
 
     saod tx staking create-validator \
-    --amount=1000000sao \
+    --amount=10000000sao \
     --pubkey=$(saod tendermint show-validator) \
     --moniker="Node & Validator VietNam" \
     --identity=1342DBE69C23B662 \
@@ -124,7 +124,7 @@ Lưu thông tin:
     --commission-max-rate="0.20" \
     --commission-max-change-rate="0.01" \
     --min-self-delegation="1000000" \
-    --gas="900000" \
+    --gas="2000000" \
     --gas-prices="0.0025sao" \
     --from=wallet
     -y
