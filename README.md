@@ -74,7 +74,7 @@ SSD: 100GB.
     sudo systemctl enable saod
     sudo systemctl restart saod
 
-    sudo journalctl -u saod -f
+    sudo journalctl -u nibid -f --no-hostname -o cat
     
 8/ Tạo ví Sao:
 
