@@ -1,13 +1,13 @@
 # Sao-Network
 
 Cấu hình khuyến nghị:
-2 Core
-4 Gb Ram
-SSD: 100GB
+2 Cores;
+4 Gb Ram;
+SSD: 100GB.
 
 1/ Cập nhật hệ thống:
 
-    sudo apt update
+    sudo apt update && sudo apt upgrade -y
 
 2/ Tải về bộ cài đặt cần thiết:
 
