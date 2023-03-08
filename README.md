@@ -52,7 +52,8 @@ SSD: 100GB.
 
     curl -o - -L https://ss-t.sao.nodestake.top/${SNAP_NAME}  | lz4 -c -d - | tar -x -C $HOME/.sao
 
-Add state Sync
+   Add state Sync:
+    
         SNAP_RPC="https://rpc-t.sao.nodestake.top:443"
         LATEST_HEIGHT=$(curl -s $SNAP_RPC/block | jq -r .result.block.header.height); \
         BLOCK_HEIGHT=$((LATEST_HEIGHT - 1000)); \
@@ -68,8 +69,9 @@ Add state Sync
         more ~/.sao/config/config.toml | grep 'rpc_servers'
         more ~/.sao/config/config.toml | grep 'trust_height'
         more ~/.sao/config/config.toml | grep 'trust_hash'
-Add Peer
-        PEERS="61e9e3927c1d25d91e8fefbdc880791e7974bfb5@159.223.19.154:27656,4a4c330115ed36bf8a5c8ffbc568d165ee91bd72@207.154.243.48:20656,244c464e3d500ee3f242fa3a10ae50d4cd02fc26@164.90.221.101:26656,d99276e75a528b1e5a40bee3fe41ffe80a3a5b1b@195.3.221.58:47656,59cef823c1a426f15eb9e688287cd1bc2b6ea42d@152.70.126.187:26656,39320c6f494f7e091ce9b40e7ed49b1abb6b6c5d@95.217.57.232:46656"
+Add Peer:
+
+    PEERS="61e9e3927c1d25d91e8fefbdc880791e7974bfb5@159.223.19.154:27656,4a4c330115ed36bf8a5c8ffbc568d165ee91bd72@207.154.243.48:20656,244c464e3d500ee3f242fa3a10ae50d4cd02fc26@164.90.221.101:26656,d99276e75a528b1e5a40bee3fe41ffe80a3a5b1b@195.3.221.58:47656,59cef823c1a426f15eb9e688287cd1bc2b6ea42d@152.70.126.187:26656,39320c6f494f7e091ce9b40e7ed49b1abb6b6c5d@95.217.57.232:46656"
         sed -i 's|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/.sao/config/config.toml
 
         sudo systemctl restart saod
