@@ -110,7 +110,7 @@ Lưu thông tin:
 
     cat $HOME/.saod/config/priv_validator_key.json
     
-9/ Tạo validator Sao Network: lưu ý đã faucet 2  và synced
+9/ Tạo validator Sao Network: lưu ý đã faucet 2 token SAO và synced
 
     saod tx staking create-validator \
     --amount=10000000sao \
