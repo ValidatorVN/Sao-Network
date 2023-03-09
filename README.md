@@ -136,3 +136,7 @@ Xem số block đã sync hiện tại:
 
     saod status 2>&1 | jq .SyncInfo.latest_block_height
 
+
+Cộng đồng chạy Node & Validator VietNam, nơi thảo luận và chia sẻ kinh nghiệm về chạy node/validator, không bàn luận chính trị.
+Chanel: https://t.me/RunnodeVietNamese
+Youtube: https://www.youtube.com/@nodevalidatorvietnam
