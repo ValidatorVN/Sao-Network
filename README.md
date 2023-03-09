@@ -74,7 +74,6 @@ Add Peer:
     PEERS="61e9e3927c1d25d91e8fefbdc880791e7974bfb5@159.223.19.154:27656,4a4c330115ed36bf8a5c8ffbc568d165ee91bd72@207.154.243.48:20656,244c464e3d500ee3f242fa3a10ae50d4cd02fc26@164.90.221.101:26656,d99276e75a528b1e5a40bee3fe41ffe80a3a5b1b@195.3.221.58:47656,59cef823c1a426f15eb9e688287cd1bc2b6ea42d@152.70.126.187:26656,39320c6f494f7e091ce9b40e7ed49b1abb6b6c5d@95.217.57.232:46656"
         sed -i 's|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/.sao/config/config.toml
 
-        sudo systemctl restart saod
  6/ Tạo hệ thống systemD:
  
     sudo tee /etc/systemd/system/saod.service > /dev/null <<EOF
