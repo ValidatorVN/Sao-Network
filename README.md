@@ -110,7 +110,7 @@ Lưu thông tin:
 
     cat $HOME/.saod/config/priv_validator_key.json
     
-9/ Tạo validator Sao Network: lưu ý đã faucet và synced
+9/ Tạo validator Sao Network: lưu ý đã faucet 2  và synced
 
     saod tx staking create-validator \
     --amount=10000000sao \
@@ -125,7 +125,7 @@ Lưu thông tin:
     --min-self-delegation="1000000" \
     --gas="2000000" \
     --gas-prices="0.0025sao" \
-    --from=wallet
+    --from=wallet \
     -y
 
 Kiểm tra trạng thái sync:
