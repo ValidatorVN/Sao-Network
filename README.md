@@ -30,13 +30,13 @@ SSD: 100GB.
     git clone https://github.com/SaoNetwork/sao-consensus.git
     cd sao-consensus
 
-    git checkout testnet0
+    git checkout v0.1.3
 
     make
 
 5/ Cài đặt Moniker và chainID:
 
-    saod init NodeName --chain-id=sao-testnet0
+    saod init NodeName --chain-id=sao-testnet1
     
  Tải về khối Genesis:
  
@@ -118,7 +118,7 @@ Lưu thông tin:
     --moniker="Node & Validator VietNam" \
     --identity=1342DBE69C23B662 \
     --details="https://t.me/NodeValidatorVietNam" \
-    --chain-id=sao-testnet0 \
+    --chain-id=sao-testnet1 \
     --commission-rate="0.10" \
     --commission-max-rate="0.20" \
     --commission-max-change-rate="0.01" \
