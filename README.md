@@ -116,7 +116,7 @@ Lưu thông tin:
     --amount=10000000sao \
     --pubkey=$(saod tendermint show-validator) \
     --moniker="Node & Validator VietNam" \
-    --identity=1342DBE69C23B662 \
+    --identity=6CB6AC3E672AAB9D \
     --details="https://t.me/NodeValidatorVietNam" \
     --chain-id=sao-testnet1 \
     --commission-rate="0.10" \
