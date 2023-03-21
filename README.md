@@ -36,7 +36,7 @@ SSD: 100GB.
 
 5/ Cài đặt Moniker và chainID:
 
-    saod init NodeName --chain-id=sao-testnet1
+    saod init Node --chain-id=sao-testnet1
     
  Tải về khối Genesis:
  
@@ -108,7 +108,7 @@ Nếu đã có ví Sao dùng lệnh recover:
     
 Lưu thông tin:
 
-    cat $HOME/.saod/config/priv_validator_key.json
+    cat $HOME/.sao/config/priv_validator_key.json
     
 9/ Tạo validator Sao Network: lưu ý đã faucet 2 token SAO và synced
 
